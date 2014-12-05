@@ -1,0 +1,292 @@
+|controle
+DATA[0] => trin:triT1.X[0]
+DATA[1] => trin:triT1.X[1]
+DATA[2] => trin:triT1.X[2]
+DATA[3] => trin:triT1.X[3]
+DATA[4] => Equal0.IN0
+DATA[4] => Equal1.IN1
+DATA[4] => Equal2.IN0
+DATA[5] => Equal0.IN1
+DATA[5] => Equal1.IN0
+DATA[5] => Equal2.IN1
+DATA[6] => Mux4.IN5
+DATA[6] => Mux3.IN5
+DATA[6] => Mux2.IN5
+DATA[6] => Mux1.IN5
+DATA[6] => Mux0.IN2
+DATA[7] => Mux4.IN4
+DATA[7] => Mux3.IN4
+DATA[7] => Mux2.IN4
+DATA[7] => Mux1.IN4
+DATA[7] => Mux0.IN1
+Resetn => Aux2out.ENA
+Resetn => Extern.ENA
+Resetn => Rin[1].ENA
+Resetn => Rin[2].ENA
+Resetn => Rin[3].ENA
+Resetn => Rout[1].ENA
+Resetn => Rout[2].ENA
+Resetn => Rout[3].ENA
+Resetn => Auxin.ENA
+Resetn => Ulatype.ENA
+Resetn => Aux2in.ENA
+Clock => regn:regT2.Clock
+Clock => regn:regT1.Clock
+Clock => regn:reg3.Clock
+Clock => regn:reg2.Clock
+Clock => Extern.CLK
+Clock => Rin[1].CLK
+Clock => Rin[2].CLK
+Clock => Rin[3].CLK
+Clock => Rout[1].CLK
+Clock => Rout[2].CLK
+Clock => Rout[3].CLK
+Clock => Auxin.CLK
+Clock => Ulatype.CLK
+Clock => Aux2in.CLK
+Clock => Aux2out.CLK
+Clock => regn:reg1.Clock
+Start => w~11.OUTPUTSELECT
+Start => w~10.OUTPUTSELECT
+Start => w~9.OUTPUTSELECT
+Start => w~8.OUTPUTSELECT
+Start => w~7.OUTPUTSELECT
+Start => w~6.OUTPUTSELECT
+Start => w~5.OUTPUTSELECT
+Start => w~4.OUTPUTSELECT
+Start => w~3.OUTPUTSELECT
+Start => w~2.OUTPUTSELECT
+Start => w~1.OUTPUTSELECT
+Start => w~0.OUTPUTSELECT
+Start => Extern~0.OUTPUTSELECT
+BusWires[0] <= comb~3
+BusWires[0] <= comb~11
+BusWires[0] <= comb~19
+BusWires[0] <= comb~27
+BusWires[0] <= comb~31
+BusWires[1] <= comb~2
+BusWires[1] <= comb~10
+BusWires[1] <= comb~18
+BusWires[1] <= comb~26
+BusWires[1] <= comb~30
+BusWires[2] <= comb~1
+BusWires[2] <= comb~9
+BusWires[2] <= comb~17
+BusWires[2] <= comb~25
+BusWires[2] <= comb~29
+BusWires[3] <= comb~0
+BusWires[3] <= comb~8
+BusWires[3] <= comb~16
+BusWires[3] <= comb~24
+BusWires[3] <= comb~28
+Register1[0] <= regn:reg1.Q[0]
+Register1[1] <= regn:reg1.Q[1]
+Register1[2] <= regn:reg1.Q[2]
+Register1[3] <= regn:reg1.Q[3]
+Register2[0] <= regn:reg2.Q[0]
+Register2[1] <= regn:reg2.Q[1]
+Register2[2] <= regn:reg2.Q[2]
+Register2[3] <= regn:reg2.Q[3]
+Register3[0] <= regn:reg3.Q[0]
+Register3[1] <= regn:reg3.Q[1]
+Register3[2] <= regn:reg3.Q[2]
+Register3[3] <= regn:reg3.Q[3]
+
+
+|controle|regn:reg1
+R[0] => Q[0]~reg0.DATAIN
+R[1] => Q[1]~reg0.DATAIN
+R[2] => Q[2]~reg0.DATAIN
+R[3] => Q[3]~reg0.DATAIN
+Rin => Q[0]~reg0.ENA
+Rin => Q[1]~reg0.ENA
+Rin => Q[2]~reg0.ENA
+Rin => Q[3]~reg0.ENA
+Clock => Q[3]~reg0.CLK
+Clock => Q[2]~reg0.CLK
+Clock => Q[1]~reg0.CLK
+Clock => Q[0]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controle|trin:tri1
+X[0] => F[0]~0.DATAIN
+X[1] => F[1]~1.DATAIN
+X[2] => F[2]~2.DATAIN
+X[3] => F[3]~3.DATAIN
+E => F[3]~3.OE
+E => F[2]~2.OE
+E => F[1]~1.OE
+E => F[0]~0.OE
+F[0] <= F[0]~0.DB_MAX_OUTPUT_PORT_TYPE
+F[1] <= F[1]~1.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= F[2]~2.DB_MAX_OUTPUT_PORT_TYPE
+F[3] <= F[3]~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controle|regn:reg2
+R[0] => Q[0]~reg0.DATAIN
+R[1] => Q[1]~reg0.DATAIN
+R[2] => Q[2]~reg0.DATAIN
+R[3] => Q[3]~reg0.DATAIN
+Rin => Q[0]~reg0.ENA
+Rin => Q[1]~reg0.ENA
+Rin => Q[2]~reg0.ENA
+Rin => Q[3]~reg0.ENA
+Clock => Q[3]~reg0.CLK
+Clock => Q[2]~reg0.CLK
+Clock => Q[1]~reg0.CLK
+Clock => Q[0]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controle|trin:tri2
+X[0] => F[0]~0.DATAIN
+X[1] => F[1]~1.DATAIN
+X[2] => F[2]~2.DATAIN
+X[3] => F[3]~3.DATAIN
+E => F[3]~3.OE
+E => F[2]~2.OE
+E => F[1]~1.OE
+E => F[0]~0.OE
+F[0] <= F[0]~0.DB_MAX_OUTPUT_PORT_TYPE
+F[1] <= F[1]~1.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= F[2]~2.DB_MAX_OUTPUT_PORT_TYPE
+F[3] <= F[3]~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controle|regn:reg3
+R[0] => Q[0]~reg0.DATAIN
+R[1] => Q[1]~reg0.DATAIN
+R[2] => Q[2]~reg0.DATAIN
+R[3] => Q[3]~reg0.DATAIN
+Rin => Q[0]~reg0.ENA
+Rin => Q[1]~reg0.ENA
+Rin => Q[2]~reg0.ENA
+Rin => Q[3]~reg0.ENA
+Clock => Q[3]~reg0.CLK
+Clock => Q[2]~reg0.CLK
+Clock => Q[1]~reg0.CLK
+Clock => Q[0]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controle|trin:tri3
+X[0] => F[0]~0.DATAIN
+X[1] => F[1]~1.DATAIN
+X[2] => F[2]~2.DATAIN
+X[3] => F[3]~3.DATAIN
+E => F[3]~3.OE
+E => F[2]~2.OE
+E => F[1]~1.OE
+E => F[0]~0.OE
+F[0] <= F[0]~0.DB_MAX_OUTPUT_PORT_TYPE
+F[1] <= F[1]~1.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= F[2]~2.DB_MAX_OUTPUT_PORT_TYPE
+F[3] <= F[3]~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controle|regn:regT1
+R[0] => Q[0]~reg0.DATAIN
+R[1] => Q[1]~reg0.DATAIN
+R[2] => Q[2]~reg0.DATAIN
+R[3] => Q[3]~reg0.DATAIN
+Rin => Q[0]~reg0.ENA
+Rin => Q[1]~reg0.ENA
+Rin => Q[2]~reg0.ENA
+Rin => Q[3]~reg0.ENA
+Clock => Q[3]~reg0.CLK
+Clock => Q[2]~reg0.CLK
+Clock => Q[1]~reg0.CLK
+Clock => Q[0]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controle|trin:triT1
+X[0] => F[0]~0.DATAIN
+X[1] => F[1]~1.DATAIN
+X[2] => F[2]~2.DATAIN
+X[3] => F[3]~3.DATAIN
+E => F[3]~3.OE
+E => F[2]~2.OE
+E => F[1]~1.OE
+E => F[0]~0.OE
+F[0] <= F[0]~0.DB_MAX_OUTPUT_PORT_TYPE
+F[1] <= F[1]~1.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= F[2]~2.DB_MAX_OUTPUT_PORT_TYPE
+F[3] <= F[3]~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controle|regn:regT2
+R[0] => Q[0]~reg0.DATAIN
+R[1] => Q[1]~reg0.DATAIN
+R[2] => Q[2]~reg0.DATAIN
+R[3] => Q[3]~reg0.DATAIN
+Rin => Q[0]~reg0.ENA
+Rin => Q[1]~reg0.ENA
+Rin => Q[2]~reg0.ENA
+Rin => Q[3]~reg0.ENA
+Clock => Q[3]~reg0.CLK
+Clock => Q[2]~reg0.CLK
+Clock => Q[1]~reg0.CLK
+Clock => Q[0]~reg0.CLK
+Q[0] <= Q[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[1] <= Q[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[2] <= Q[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Q[3] <= Q[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controle|trin:triT2
+X[0] => F[0]~0.DATAIN
+X[1] => F[1]~1.DATAIN
+X[2] => F[2]~2.DATAIN
+X[3] => F[3]~3.DATAIN
+E => F[3]~3.OE
+E => F[2]~2.OE
+E => F[1]~1.OE
+E => F[0]~0.OE
+F[0] <= F[0]~0.DB_MAX_OUTPUT_PORT_TYPE
+F[1] <= F[1]~1.DB_MAX_OUTPUT_PORT_TYPE
+F[2] <= F[2]~2.DB_MAX_OUTPUT_PORT_TYPE
+F[3] <= F[3]~3.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|controle|ula:opula
+A[0] => Add1.IN8
+A[0] => Add0.IN4
+A[1] => Add1.IN7
+A[1] => Add0.IN3
+A[2] => Add1.IN6
+A[2] => Add0.IN2
+A[3] => Add1.IN5
+A[3] => Add0.IN1
+BusWires[0] => Add0.IN8
+BusWires[0] => Add1.IN4
+BusWires[1] => Add0.IN7
+BusWires[1] => Add1.IN3
+BusWires[2] => Add0.IN6
+BusWires[2] => Add1.IN2
+BusWires[3] => Add0.IN5
+BusWires[3] => Add1.IN1
+Ulatype => Result~3.OUTPUTSELECT
+Ulatype => Result~2.OUTPUTSELECT
+Ulatype => Result~1.OUTPUTSELECT
+Ulatype => Result~0.OUTPUTSELECT
+Result[0] <= Result~3.DB_MAX_OUTPUT_PORT_TYPE
+Result[1] <= Result~2.DB_MAX_OUTPUT_PORT_TYPE
+Result[2] <= Result~1.DB_MAX_OUTPUT_PORT_TYPE
+Result[3] <= Result~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

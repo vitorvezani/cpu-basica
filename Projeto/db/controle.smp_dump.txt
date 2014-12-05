@@ -1,0 +1,15 @@
+
+State Machine - |controle|w
+Name w.final w.xchg3 w.xchg2 w.xchg1 w.sub3 w.sub2 w.sub1 w.add3 w.add2 w.add1 w.mov w.inicial 
+w.inicial 0 0 0 0 0 0 0 0 0 0 0 0 
+w.mov 0 0 0 0 0 0 0 0 0 0 1 1 
+w.add1 0 0 0 0 0 0 0 0 0 1 0 1 
+w.add2 0 0 0 0 0 0 0 0 1 0 0 1 
+w.add3 0 0 0 0 0 0 0 1 0 0 0 1 
+w.sub1 0 0 0 0 0 0 1 0 0 0 0 1 
+w.sub2 0 0 0 0 0 1 0 0 0 0 0 1 
+w.sub3 0 0 0 0 1 0 0 0 0 0 0 1 
+w.xchg1 0 0 0 1 0 0 0 0 0 0 0 1 
+w.xchg2 0 0 1 0 0 0 0 0 0 0 0 1 
+w.xchg3 0 1 0 0 0 0 0 0 0 0 0 1 
+w.final 1 0 0 0 0 0 0 0 0 0 0 1 

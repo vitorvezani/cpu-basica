@@ -1,0 +1,208 @@
+Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+7
+3344
+OFF
+OFF
+OFF
+ON
+ON
+ON
+FV_OFF
+Level2
+0
+0
+VRSM_ON
+VHSM_ON
+0
+-- Start Library Paths --
+-- End Library Paths --
+-- Start VHDL Libraries --
+-- End VHDL Libraries --
+# entity
+controle
+# storage
+db|controle.(0).cnf
+db|controle.(0).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+controle.vhd
+63799aa5aa8a694176aa57464799417
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# include_file {
+work|components.vhd
+dc10f399114e974c6c24aa8618c4033
+}
+# hierarchies {
+|
+}
+# lmf
+..|..|..|..|..|altera|90sp1|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+regn
+# storage
+db|controle.(1).cnf
+db|controle.(1).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+work|regn.vhd
+748ee3141149ca2b2602684ebc9cd3d
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+n
+4
+PARAMETER_SIGNED_DEC
+USR
+ constraint(r)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(q)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+regn:reg1
+regn:reg2
+regn:reg3
+regn:regT1
+regn:regT2
+}
+# lmf
+..|..|..|..|..|altera|90sp1|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+trin
+# storage
+db|controle.(2).cnf
+db|controle.(2).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+work|trin.vhd
+22339479bfd2d72fadd3aebbe3378f9
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+n
+4
+PARAMETER_SIGNED_DEC
+USR
+ constraint(x)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(f)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+trin:tri1
+trin:tri2
+trin:tri3
+trin:triT1
+trin:triT2
+}
+# lmf
+..|..|..|..|..|altera|90sp1|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# entity
+ula
+# storage
+db|controle.(3).cnf
+db|controle.(3).cnf
+# logic_option {
+AUTO_RAM_RECOGNITION
+ON
+}
+# case_insensitive
+# source_file
+work|ula.vhd
+eeace77a66ea031a765a819c4b8fb9
+5
+# internal_option {
+HDL_INITIAL_FANOUT_LIMIT
+OFF
+AUTO_RESOURCE_SHARING
+OFF
+AUTO_RAM_RECOGNITION
+ON
+AUTO_ROM_RECOGNITION
+ON
+}
+# user_parameter {
+ constraint(a)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(buswires)
+3 downto 0
+PARAMETER_STRING
+USR
+ constraint(result)
+3 downto 0
+PARAMETER_STRING
+USR
+}
+# hierarchies {
+ula:opula
+}
+# lmf
+..|..|..|..|..|altera|90sp1|quartus|lmf|maxplus2.lmf
+9a59d39b0706640b4b2718e8a1ff1f
+# macro_sequence
+
+# end
+# complete
+

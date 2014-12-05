@@ -1,0 +1,294 @@
+Simulator report for controle
+Mon Apr 02 08:43:38 2012
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 115 nodes    ;
+; Simulation Coverage         ;      74.58 % ;
+; Total Number of Transitions ; 1009         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
+; Device                      ; EP2S15F484C3 ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Timing     ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      74.58 % ;
+; Total nodes checked                                 ; 115          ;
+; Total output ports checked                          ; 118          ;
+; Total output ports with complete 1/0-value coverage ; 88           ;
+; Total output ports with no 1/0-value coverage       ; 11           ;
+; Total output ports with no 1-value coverage         ; 14           ;
+; Total output ports with no 0-value coverage         ; 27           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                            ;
++----------------------------------+----------------------------------+------------------+
+; Node Name                        ; Output Port Name                 ; Output Port Type ;
++----------------------------------+----------------------------------+------------------+
+; |controle|ula:opula|Add0~6       ; |controle|ula:opula|Add0~6       ; sumout           ;
+; |controle|ula:opula|Add0~6       ; |controle|ula:opula|Add0~7       ; cout             ;
+; |controle|ula:opula|Add0~10      ; |controle|ula:opula|Add0~10      ; sumout           ;
+; |controle|ula:opula|Add0~10      ; |controle|ula:opula|Add0~11      ; cout             ;
+; |controle|ula:opula|Add0~14      ; |controle|ula:opula|Add0~14      ; sumout           ;
+; |controle|ula:opula|Add0~14      ; |controle|ula:opula|Add0~15      ; cout             ;
+; |controle|ula:opula|Add0~18      ; |controle|ula:opula|Add0~18      ; sumout           ;
+; |controle|Selector11~0           ; |controle|Selector11~0           ; combout          ;
+; |controle|regn:reg1|Q[0]         ; |controle|regn:reg1|Q[0]         ; regout           ;
+; |controle|regn:reg1|Q[1]         ; |controle|regn:reg1|Q[1]         ; regout           ;
+; |controle|regn:reg2|Q[2]         ; |controle|regn:reg2|Q[2]         ; regout           ;
+; |controle|Rin[1]                 ; |controle|Rin[1]                 ; regout           ;
+; |controle|Rin[2]                 ; |controle|Rin[2]                 ; regout           ;
+; |controle|Rin[3]                 ; |controle|Rin[3]                 ; regout           ;
+; |controle|w.mov                  ; |controle|w.mov                  ; regout           ;
+; |controle|w.xchg2                ; |controle|w.xchg2                ; regout           ;
+; |controle|w.add3                 ; |controle|w.add3                 ; regout           ;
+; |controle|w.sub3                 ; |controle|w.sub3                 ; regout           ;
+; |controle|w.xchg1                ; |controle|w.xchg1                ; regout           ;
+; |controle|w.add1                 ; |controle|w.add1                 ; regout           ;
+; |controle|w.sub1                 ; |controle|w.sub1                 ; regout           ;
+; |controle|w.add2                 ; |controle|w.add2                 ; regout           ;
+; |controle|w.sub2                 ; |controle|w.sub2                 ; regout           ;
+; |controle|w.inicial              ; |controle|w.inicial              ; regout           ;
+; |controle|w.xchg3                ; |controle|w.xchg3                ; regout           ;
+; |controle|w.final                ; |controle|w.final                ; regout           ;
+; |controle|Selector10~0           ; |controle|Selector10~0           ; combout          ;
+; |controle|Rout[3]                ; |controle|Rout[3]                ; regout           ;
+; |controle|Rout[2]                ; |controle|Rout[2]                ; regout           ;
+; |controle|Extern                 ; |controle|Extern                 ; regout           ;
+; |controle|Rout[1]                ; |controle|Rout[1]                ; regout           ;
+; |controle|Aux2out                ; |controle|Aux2out                ; regout           ;
+; |controle|trin:tri1|F[0]~8       ; |controle|trin:tri1|F[0]~8       ; combout          ;
+; |controle|trin:tri1|F[0]~9       ; |controle|trin:tri1|F[0]~9       ; combout          ;
+; |controle|trin:tri1|F[0]~10      ; |controle|trin:tri1|F[0]~10      ; combout          ;
+; |controle|trin:tri1|F[1]~11      ; |controle|trin:tri1|F[1]~11      ; combout          ;
+; |controle|trin:tri1|F[1]~12      ; |controle|trin:tri1|F[1]~12      ; combout          ;
+; |controle|regn:regT2|Q[2]        ; |controle|regn:regT2|Q[2]        ; regout           ;
+; |controle|trin:tri1|F[2]~13      ; |controle|trin:tri1|F[2]~13      ; combout          ;
+; |controle|trin:tri1|F[2]~14      ; |controle|trin:tri1|F[2]~14      ; combout          ;
+; |controle|trin:tri1|F[3]~15      ; |controle|trin:tri1|F[3]~15      ; combout          ;
+; |controle|trin:tri1|F[3]~16      ; |controle|trin:tri1|F[3]~16      ; combout          ;
+; |controle|w~38                   ; |controle|w~38                   ; combout          ;
+; |controle|w~39                   ; |controle|w~39                   ; combout          ;
+; |controle|w~40                   ; |controle|w~40                   ; combout          ;
+; |controle|w~41                   ; |controle|w~41                   ; combout          ;
+; |controle|Selector1~0            ; |controle|Selector1~0            ; combout          ;
+; |controle|Selector14~0           ; |controle|Selector14~0           ; combout          ;
+; |controle|Selector0~0            ; |controle|Selector0~0            ; combout          ;
+; |controle|regn:regT1|Q[0]        ; |controle|regn:regT1|Q[0]        ; regout           ;
+; |controle|Aux2in                 ; |controle|Aux2in                 ; regout           ;
+; |controle|regn:regT1|Q[1]        ; |controle|regn:regT1|Q[1]        ; regout           ;
+; |controle|Auxin                  ; |controle|Auxin                  ; regout           ;
+; |controle|Selector15~0           ; |controle|Selector15~0           ; combout          ;
+; |controle|Selector13~0           ; |controle|Selector13~0           ; combout          ;
+; |controle|Selector13~1           ; |controle|Selector13~1           ; combout          ;
+; |controle|Selector12~0           ; |controle|Selector12~0           ; combout          ;
+; |controle|Selector12~1           ; |controle|Selector12~1           ; combout          ;
+; |controle|Selector12~2           ; |controle|Selector12~2           ; combout          ;
+; |controle|Selector8~0            ; |controle|Selector8~0            ; combout          ;
+; |controle|Selector9~0            ; |controle|Selector9~0            ; combout          ;
+; |controle|Selector9~1            ; |controle|Selector9~1            ; combout          ;
+; |controle|Selector15~1           ; |controle|Selector15~1           ; combout          ;
+; |controle|Selector17~0           ; |controle|Selector17~0           ; combout          ;
+; |controle|Selector18~1           ; |controle|Selector18~1           ; combout          ;
+; |controle|BusWires[0]            ; |controle|BusWires[0]~3          ; combout          ;
+; |controle|BusWires[0]            ; |controle|BusWires[0]~output     ; padio            ;
+; |controle|BusWires[1]            ; |controle|BusWires[1]~2          ; combout          ;
+; |controle|BusWires[1]            ; |controle|BusWires[1]~output     ; padio            ;
+; |controle|BusWires[2]            ; |controle|BusWires[2]~1          ; combout          ;
+; |controle|BusWires[2]            ; |controle|BusWires[2]~output     ; padio            ;
+; |controle|BusWires[3]            ; |controle|BusWires[3]~0          ; combout          ;
+; |controle|BusWires[3]            ; |controle|BusWires[3]~output     ; padio            ;
+; |controle|Register1[0]           ; |controle|Register1[0]           ; padio            ;
+; |controle|Register1[1]           ; |controle|Register1[1]           ; padio            ;
+; |controle|Register2[2]           ; |controle|Register2[2]           ; padio            ;
+; |controle|Clock                  ; |controle|Clock~corein           ; combout          ;
+; |controle|DATA[4]                ; |controle|DATA[4]~corein         ; combout          ;
+; |controle|DATA[0]                ; |controle|DATA[0]~corein         ; combout          ;
+; |controle|DATA[1]                ; |controle|DATA[1]~corein         ; combout          ;
+; |controle|DATA[2]                ; |controle|DATA[2]~corein         ; combout          ;
+; |controle|DATA[7]                ; |controle|DATA[7]~corein         ; combout          ;
+; |controle|DATA[6]                ; |controle|DATA[6]~corein         ; combout          ;
+; |controle|Start                  ; |controle|Start~corein           ; combout          ;
+; |controle|Clock~clkctrl          ; |controle|Clock~clkctrl          ; outclk           ;
+; |controle|regn:regT1|Q[2]~feeder ; |controle|regn:regT1|Q[2]~feeder ; combout          ;
+; |controle|regn:regT1|Q[3]~feeder ; |controle|regn:regT1|Q[3]~feeder ; combout          ;
+; |controle|regn:reg2|Q[3]~feeder  ; |controle|regn:reg2|Q[3]~feeder  ; combout          ;
++----------------------------------+----------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                   ;
++----------------------------+----------------------------+------------------+
+; Node Name                  ; Output Port Name           ; Output Port Type ;
++----------------------------+----------------------------+------------------+
+; |controle|ula:opula|Add0~3 ; |controle|ula:opula|Add0~3 ; cout             ;
+; |controle|regn:reg1|Q[3]   ; |controle|regn:reg1|Q[3]   ; regout           ;
+; |controle|regn:reg2|Q[3]   ; |controle|regn:reg2|Q[3]   ; regout           ;
+; |controle|regn:reg3|Q[2]   ; |controle|regn:reg3|Q[2]   ; regout           ;
+; |controle|regn:reg3|Q[3]   ; |controle|regn:reg3|Q[3]   ; regout           ;
+; |controle|regn:regT1|Q[3]  ; |controle|regn:regT1|Q[3]  ; regout           ;
+; |controle|Register1[3]     ; |controle|Register1[3]     ; padio            ;
+; |controle|Register2[3]     ; |controle|Register2[3]     ; padio            ;
+; |controle|Register3[2]     ; |controle|Register3[2]     ; padio            ;
+; |controle|Register3[3]     ; |controle|Register3[3]     ; padio            ;
+; |controle|DATA[5]          ; |controle|DATA[5]~corein   ; combout          ;
+; |controle|Resetn           ; |controle|Resetn~corein    ; combout          ;
+; |controle|DATA[3]          ; |controle|DATA[3]~corein   ; combout          ;
+; |controle|Resetn~clkctrl   ; |controle|Resetn~clkctrl   ; outclk           ;
++----------------------------+----------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                 ;
++---------------------------+---------------------------+------------------+
+; Node Name                 ; Output Port Name          ; Output Port Type ;
++---------------------------+---------------------------+------------------+
+; |controle|regn:reg1|Q[2]  ; |controle|regn:reg1|Q[2]  ; regout           ;
+; |controle|regn:reg1|Q[3]  ; |controle|regn:reg1|Q[3]  ; regout           ;
+; |controle|regn:reg2|Q[0]  ; |controle|regn:reg2|Q[0]  ; regout           ;
+; |controle|regn:reg2|Q[1]  ; |controle|regn:reg2|Q[1]  ; regout           ;
+; |controle|regn:reg2|Q[3]  ; |controle|regn:reg2|Q[3]  ; regout           ;
+; |controle|regn:reg3|Q[0]  ; |controle|regn:reg3|Q[0]  ; regout           ;
+; |controle|regn:reg3|Q[1]  ; |controle|regn:reg3|Q[1]  ; regout           ;
+; |controle|regn:reg3|Q[2]  ; |controle|regn:reg3|Q[2]  ; regout           ;
+; |controle|regn:reg3|Q[3]  ; |controle|regn:reg3|Q[3]  ; regout           ;
+; |controle|regn:regT2|Q[0] ; |controle|regn:regT2|Q[0] ; regout           ;
+; |controle|regn:regT2|Q[1] ; |controle|regn:regT2|Q[1] ; regout           ;
+; |controle|regn:regT2|Q[3] ; |controle|regn:regT2|Q[3] ; regout           ;
+; |controle|Ulatype         ; |controle|Ulatype         ; regout           ;
+; |controle|regn:regT1|Q[2] ; |controle|regn:regT1|Q[2] ; regout           ;
+; |controle|regn:regT1|Q[3] ; |controle|regn:regT1|Q[3] ; regout           ;
+; |controle|Selector16~0    ; |controle|Selector16~0    ; combout          ;
+; |controle|Register1[2]    ; |controle|Register1[2]    ; padio            ;
+; |controle|Register1[3]    ; |controle|Register1[3]    ; padio            ;
+; |controle|Register2[0]    ; |controle|Register2[0]    ; padio            ;
+; |controle|Register2[1]    ; |controle|Register2[1]    ; padio            ;
+; |controle|Register2[3]    ; |controle|Register2[3]    ; padio            ;
+; |controle|Register3[0]    ; |controle|Register3[0]    ; padio            ;
+; |controle|Register3[1]    ; |controle|Register3[1]    ; padio            ;
+; |controle|Register3[2]    ; |controle|Register3[2]    ; padio            ;
+; |controle|Register3[3]    ; |controle|Register3[3]    ; padio            ;
+; |controle|DATA[5]         ; |controle|DATA[5]~corein  ; combout          ;
+; |controle|DATA[3]         ; |controle|DATA[3]~corein  ; combout          ;
++---------------------------+---------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Apr 02 08:43:37 2012
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off controle -c controle
+Info: Using vector source file "C:/Documents and Settings/10159861/Desktop/ProjetoArq/Arquivos Projeto/controle.vwf"
+Warning: Wrong node type for node "BusWires[0]~result" in vector source file. Design node is of type Output, but signal in vector source file is of type Buried.
+Warning: Wrong node type for node "BusWires[1]~result" in vector source file. Design node is of type Output, but signal in vector source file is of type Buried.
+Warning: Wrong node type for node "BusWires[2]~result" in vector source file. Design node is of type Output, but signal in vector source file is of type Buried.
+Warning: Wrong node type for node "BusWires[3]~result" in vector source file. Design node is of type Output, but signal in vector source file is of type Buried.
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      74.58 %
+Info: Number of transitions in simulation is 1009
+Info: Quartus II Simulator was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 117 megabytes
+    Info: Processing ended: Mon Apr 02 08:43:38 2012
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
